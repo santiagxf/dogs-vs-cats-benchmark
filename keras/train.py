@@ -1,4 +1,5 @@
 import os, cv2, random
+import urllib.request, zipfile
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -16,6 +17,12 @@ if ('__file__' in globals()):
 else:
     working_dir = r'C:\Users\facun\Projects\Kaggle\dogs-vs-cats-benchmark'
 
+
+DATSET_URL = r'https://santiagxf.blob.core.windows.net/public/data.zip'
+urllib.request.urlretrieve(DATSET_URL, filename="data.zip")
+
+with zipfile.ZipFile("data.zip") as zipref:
+    zipref.extractall("data")
 
 IMG_SIZE = 224
 NUM_CLASSES = 2
