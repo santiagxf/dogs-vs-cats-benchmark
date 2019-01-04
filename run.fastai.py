@@ -4,7 +4,7 @@ from azureml.core.run import Run
 from azureml.core.experiment import Experiment
 from azureml.train.dnn import PyTorch
 
-subscription_id = "1b69669f-e4c4-4d8d-8a59-79846974bb62" # The ID of the Azure Subscription
+subscription_id = "0000-00000000-00000000-0000" # The ID of the Azure Subscription
 resource_group = "AdvanceAnalytics.Aml.Experiments" # Name of a logical resource group
 workspace_name = "aa-ml-aml-workspace" # The name of the workspace to look for or to create
 workspace_region = 'eastus' # Location of the workspace

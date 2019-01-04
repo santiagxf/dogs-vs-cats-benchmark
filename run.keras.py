@@ -7,7 +7,7 @@ from azureml.core.runconfig import RunConfiguration
 from azureml.core import ScriptRunConfig
 from azureml.core.conda_dependencies import CondaDependencies
 
-subscription_id = "MASKED"
+subscription_id = "0000-00000000-00000000-0000"
 resource_group = "AdvanceAnalytics.ML"
 workspace_name = "aa-ml-aml-workspace"
 workspace_region = 'eastus'
